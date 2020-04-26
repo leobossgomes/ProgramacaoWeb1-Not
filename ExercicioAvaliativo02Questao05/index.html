@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flexivel">
+        <div>
+            <label for="numero1">Numero 1</label>
+            <input type="text" id="numero1">
+        </div>
+        <div>
+            <label for="numero2">Numero 2</label>
+            <input type="text" id="numero2">
+        </div>
+        <div>
+            <label for="numero3">Numero 3</label>
+            <input type="text" id="numero3">
+        </div>
+    </div>
+    <button onclick="cliqueNoBotao()">Submit</button>
+</body>
+
+</html>
+
+<script>
+
+    function cliqueNoBotao(params) {
+
+        const valorCampo1 = document.getElementById("numero1");
+        const valorCampo2 = document.getElementById("numero2");
+        const valorCampo3 = document.getElementById("numero3");
+
+        var soma = parseInt(valorCampo1.value) + parseInt(valorCampo2.value) + parseInt(valorCampo3.value);
+
+        var par = soma % 2;
+
+        if (par == 0) {
+            alert("par")
+        }
+        else {
+            alert("impar")
+        }
+
+    }
+
+</script>

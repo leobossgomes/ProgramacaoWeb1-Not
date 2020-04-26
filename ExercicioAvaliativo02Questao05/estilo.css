@@ -1,0 +1,9 @@
+input[type=text]:hover{ 
+    background: green; 
+    border:2px solid red;
+}
+
+.flexivel{
+    display: flex;
+    flex-wrap: wrap;
+}

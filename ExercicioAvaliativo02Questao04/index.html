@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id='filme1'></h2>
+    <h2 id='filme2'></h2>
+    <h2 id='filme3'></h2>
+</body>
+
+</html>
+
+<script>
+
+    function Filme(titulo, ano, genero) {
+        this.titulo = titulo;
+        this.ano = ano;
+        this.genero = genero;
+    }
+
+    var filme1 = new Filme("Tropa de Elite", 2007, 'Acao');
+    var filme2 = new Filme("Velozes e Furiosos", 2001, 'Acao');
+    var filme3 = new Filme("Tropa de Elite", 2012, 'Acao');
+
+    document.getElementById("filme1").innerHTML = filme1.titulo + ' ' + filme1.ano + ' ' + filme1.genero;
+    document.getElementById("filme2").innerHTML = filme2.titulo + ' ' + filme2.ano + ' ' + filme2.genero;
+    document.getElementById("filme3").innerHTML = filme3.titulo + ' ' + filme3.ano + ' ' + filme3.genero;
+
+</script>

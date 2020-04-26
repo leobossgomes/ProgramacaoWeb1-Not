@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    ul {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: blue;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id=titulo></h2>    
+</body>
+
+</html>
+
+<script>
+    var carros = new Array("Fusca", "Palio", "Gol");
+
+    const titulo = document.getElementById('titulo');
+    titulo.innerHTML="<b>Carros</b>";
+    
+    const lista = document.createElement('ul');
+
+    for (var i = 0; i < carros.length; i++) {
+        const item = document.createElement('li');
+        item.innerHTML = carros[i];
+        lista.appendChild(item);
+    }
+
+    titulo.appendChild(lista);
+</script>
