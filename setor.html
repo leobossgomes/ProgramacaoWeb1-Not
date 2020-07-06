@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Setores
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="tdForm">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>ID:</label>
+                        <input type="number" name="id_dep" id="id_dep">
+                    </div>   
+                    <div>
+                        <label class="validation-error hide" id="validadcaoNomeSetor">Nome do setor:</label>
+                        <input type="text" name="nome" required="true" id="nome">
+                    </div>                  
+                    <div>
+                        <label>Quantidade de Integrantes:</label>
+                        <input type="number" name="integrantes" id="integrantes">
+                    </div>
+                    <div>
+                        <label>Carga Horária:</label>
+                        <input type="number" name="carga_horaria" id="carga_horaria">
+                    </div>                 
+                   <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            
+            <td>
+                <table class="list" id="listaDeSetores">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Integrantes</th>
+                            <th>Carga Horária</th>
+                            <th>Ações</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="scriptSetor.js"></script>
+</body>
+</html>
